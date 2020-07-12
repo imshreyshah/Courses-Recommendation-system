@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommendation Generator</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>
+      Study Material Recommendation Systems based on Study Patterns and Cognitive learning
+    </h1>
+    <h2>
+    About the project: 
+    </h2>
+    <p>
+      This project takes the log files of user as initial input and extracts their study patterns based on their online activity.
+      The recommendation generator takes those features as input, tries to find similar users based comparing the study patterns and recommends courses they completed.
+    </p>
+    <form method="post" action="/result">
+      <fieldset>
+        <legend>Text input</legend>
+        <p>
+          <label >Insert an index between 0 to {{max}} to choose a USER ID</label>
+          <input type = "number"
+                 name = "index"
+                 value = "Integer here"
+                 min="0"
+                 max="39000"
+                 required/ >
+        </p>
+        <p>
+          <label for = "N">Number of Recommendations</label>
+          <input type = "number"
+                  name = "N"
+                  value = "Integer here"
+                  min = "1"
+                  max = "100"
+                  required/ >
+        </p>
+        <p>
+        <input type="submit" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

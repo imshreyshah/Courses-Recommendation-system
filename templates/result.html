@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results page</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <style> 
+      .return { 
+          background-color: rgb(190, 221, 149); 
+          border: 2px solid black; 
+          color: rgb(44, 57, 172); 
+          padding: 5px 10px; 
+          text-align: center; 
+          display: inline-block; 
+          font-size: 20px; 
+          margin: 10px 30px; 
+          cursor: pointer; 
+      } 
+  </style> 
+</head>
+<body>
+    <h2>Results Page</h2>
+    <h3>Based on the courses user: {{userID}} has previously done </h3>
+      <ol>
+        {% for rec in rec_list %}
+          <li>{{ rec }}</li>
+        {% endfor %}  
+      </ol>
+      
+      <a href='/'> 
+        <button class="return"> 
+            Try another query 
+        </button> 
+    </a>      
+</body>
+
