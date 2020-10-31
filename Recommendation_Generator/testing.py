@@ -1,8 +1,9 @@
 '''This file is to test the generator.py file'''
 
-#Setting system path
+#Setting path variables
 import sys
-sys.path.append('D:\\Internships\\Silver Touch\\Project\\Study material Recommendation Engine')
+from configs import PROJECT_PATH
+sys.path.append(PROJECT_PATH)
 
 from Recommendation_Generator.generator import recommendationGenerator
 import pandas as pd

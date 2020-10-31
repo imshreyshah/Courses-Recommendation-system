@@ -9,16 +9,15 @@ Now those courses shall be recommended to the user where he/she shall be expecte
 
 This approach is a type of collaborative filtering approach to generate recommendations.
 
-## Model Description##
+## Model Description
 The model takes the online activity of a student as input in the form of log files. 
 As a part of the first step, I built the **Input processing module** which converts the huge log files to usable feature matrix in two steps. 
 Next, the model takes those features and compares the cosine pairwise similarity with other users and finds similar users. 
 Finally the model outputs an ordered list of top N recommendations. 
 The model has been presented as a simple API built using the Flask framework. 
 
-## How to run the app##
-First you need to set the system path. 
-You can do this by opening each file and changing the system path mentioned in the first line to the path to **server.py** file on your local computer.
+## How to run the app
+First you need to set the system path. You can do that by setting the project path in configs.py file
 
 Now, while being in the directory containing server.py file type the following command:
 

@@ -1,12 +1,13 @@
 #Setting path variables
 import sys
-sys.path.append('D:\\Internships\\Silver Touch\\Project\\Study material Recommendation Engine')
+from configs import *
+sys.path.append(PROJECT_PATH)
 
 #Importing required libraries
 from flask import Flask,render_template,request
 from Recommendation_Generator.generator import recommendationGenerator
 
-features,data = recommendationGenerator.load_data(recommendationGenerator, datapath='./data/features_sample.csv')
+features,data = recommendationGenerator.load_data(recommendationGenerator, datapath= DATA_PATH)
 users = data['userID'].unique()
 
 app = Flask(__name__)

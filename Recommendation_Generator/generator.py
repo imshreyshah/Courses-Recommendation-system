@@ -1,7 +1,7 @@
 #Setting path variables
 import sys
-sys.path.append('D:\\Internships\\Silver Touch\\Project\\Study material Recommendation Engine')
-
+from configs import PROJECT_PATH
+sys.path.append(PROJECT_PATH)
 #Importing required libraries
 import pandas as pd
 from Input_Preprocessing import utils
