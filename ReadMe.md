@@ -1,7 +1,8 @@
 # Course Recommendation Engine based on online Study patterns
 
 ## Project Description
-The project aims to recommend courses to students based on their study patterns and cognitive level.
+The project aims to recommend courses to students based on their study patterns and cognitive level. It was built as a part of my internship at [SilverTouch Technologies LTD](https://www.silvertouch.com/).
+
 Trivially recommendations are made based on course ratings which leads to only highly rated courses being recommended. This approach ignores the fact that the cognitive level of the student might not be suitable for those courses.
 
 Hence this recommendation engine takes the user activity of a user in courses he/she has already finished. Then it finds similar users who had shown similar patterns in activities in other courses.
