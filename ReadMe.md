@@ -45,5 +45,7 @@ Next it has the function to convert the raw data containing CSV file to feature 
 The generator.py file contains the main model that generates the recommendation list.
 
 ## Author
-Shrey Shah [GitHub](https://github.com/imshreyshah) [LinkedIn] (https://www.linkedin.com/in/imshreyshah/)
+Shrey Shah 
+[GitHub](https://github.com/imshreyshah) 
+[LinkedIn] (https://www.linkedin.com/in/imshreyshah)
   
